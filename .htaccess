@@ -1,3 +1,5 @@
  ErrorDocument 404 http://www.wetrack.tech/404.html 
  Redirect /index.html http://www.wetrack.tech
- Redirect /wetrack.tech http://www.wetrack.tech
+ 
+ RewriteCond %{HTTP_HOST} ^wetrack.tech$
+ RewriteRule (.*)$ http://www.wetrack.tech/$1 [R=301,L]
