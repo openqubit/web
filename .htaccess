@@ -1,1 +1,2 @@
  ErrorDocument 404 http://www.wetrack.tech/404.html 
+ Redirect /index.html http://www.wetrack.tech
